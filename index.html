@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prueba 2</title>
+</head>
+<body>
+
+	<h1 id="t">Botones chistosos</h1>
+	<button onclick="a1()" id="bt1"> Botón Mentiroso </button><br><br>
+	<button onclick="a2()" id="bt2"> Botón Joker </button><br><br>
+	<button onclick="a3()" id="bt3"> Botón AVAST Antivirus </button><br><br>
+	<p>Necesitamos que ingreses información personal para poder doxearlo mejor, le agradecemos su colaboración</p>
+	<p>Color de piel: <input type="text" name="Texto 1" id="t1"><br><br>
+	Color de pelo: <input type="text" name="Texto 2" id="t2"><br><br>
+	<button onclick="a4()" id="bt4"> Enviar</button></p><br>
+	Respuesta enviada: &nbsp;<output id="out1"></output>
+	<style type="text/css">
+		#bt1{
+			font-family: Times New Roman;
+			font-weight: bolder;
+			font-size: medium;
+			background-color: rgb(80, 166, 82);
+			color: rgb(44, 45, 40);
+		}
+		#bt2{
+			font-family: Times New Roman;
+			font-weight: bolder;
+			font-size: medium;
+			background-color: rgb(80, 166, 82);
+			color: rgb(44, 45, 40);
+		}
+		#bt3{
+			font-family: Times New Roman;
+			font-weight: bolder;
+			font-size: medium;
+			background-color: rgb(80, 166, 82);
+			color: rgb(44, 45, 40);
+		}
+		#bt4{
+			font-family: Times New Roman;
+			font-weight: bolder;
+			font-size: medium;
+			background-color: rgb(80, 166, 82);
+			color: rgb(44, 45, 40);
+		}
+		#t1{
+			background-color: rgb(115, 192, 231);
+			color: rgb(44, 45, 40);
+		}
+		#t2{
+			background-color: rgb(115, 192, 231);
+			color: rgb(44, 45, 40);
+		}
+		#t{
+			color: rgb(213, 105, 83);
+		}
+		#out1{
+			color: rgb(101, 157, 191);
+		}
+		body{
+			background-image: url(Fondo.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			color: rgb(80, 166, 82);
+			font-size: large;
+		}
+	</style>
+	<script type="text/javascript">
+		function a1(){
+			alert("¡Que bonito pelo!)
+		}
+		function a2(){
+			confirm("Vivimos en una sociedad")
+		}
+		function a3(){
+			alert("Se ha detectado un virus no instalado");
+			confirm("Quiere instalarlo?");
+		}
+		function a4(){
+			var Concatenar= " Tenemos aqui a un "+document.getElementById("t1").value+
+			" con greñas de color "+document.getElementById("t2").value;
+			alert(Concatenar)
+			var Piel = document.getElementById("t1").value;
+			var Pelo = document.getElementById("t2").value;
+			document.getElementById("out1").innerHTML= "Color de piel: "+Piel+", Color de pelo: "+Pelo
+		}
+	</script>
+
+</body>
+</html>
